@@ -62,8 +62,6 @@ describe('toggle todos', () => {
         // You need double click first time when entering popup 
         cy.get(".checker")
             .click();
-        cy.get(".checker")
-            .click();
         cy.get(".todo-item")
             .find(".editable")
             .invoke("css", "text-decoration")
@@ -72,8 +70,6 @@ describe('toggle todos', () => {
 
     it("set todo from done to active",() => {
         // You need double click first time when entering popup 
-        cy.get(".checker")
-            .click();
         cy.get(".checker")
             .click();
         cy.get(".todo-item")

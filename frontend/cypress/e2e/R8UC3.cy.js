@@ -62,8 +62,6 @@ describe('delete todos', () => {
         // You need double click first time when entering popup 
         cy.get(".remover")
             .click();
-        cy.get(".remover")
-            .click();
         cy.get(".todo-item")
             .should("not.exist");
     })
